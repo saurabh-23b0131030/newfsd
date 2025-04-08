@@ -33,9 +33,37 @@
 //   } 
 //   console.log(hello());
 
-// let addTwoNumbers = (x, y) => console.log(x+y);
-// addTwoNumbers(5, 2);
+let addTwoNumbers = (x, y) => {
+    return(x + y);
+}
 
-// const arr = ["apple", "banana", "cherry"];
-// const arr2 = ["elephant", ...arr, "monkey"]
-// console.log(arr2);
+
+//   const arr = ["apple", "banana", "cherry"];
+//   const arr2 = ["elephant", ...arr, "monkey"]
+//   console.log(arr2);
+
+//   const arr3 = ["elephant",arr, "monkey"]
+//   console.log(arr3);
+// function addTwoNumbers(x, y, z, a) {
+//     console.log(x + y + z + a);
+// }
+// let arr1 = [5, 6];
+// let arr2 = [5, 6];
+// addTwoNumbers(...arr1, ...arr2);
+// function someFunction(par1,...par2) {
+//     console.log(par1,...par2);
+// }
+// someFunction("hi", "how", "are you");
+// let addTwoNumbers = (x, y)=>{
+//     console.log(x + y);
+
+// }
+// addTwoNumbers(5, 6)
+let resultsArr = [];
+for (let i = 0; i <= 10; i++) {
+    result = addTwoNumbers(i, 2 * i);
+    resultsArr.push(result);
+}
+console.log(resultsArr);
+
+
