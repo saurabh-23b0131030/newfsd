@@ -33,9 +33,9 @@
 //   } 
 //   console.log(hello());
 
-let addTwoNumbers = (x, y) => {
-    return(x + y);
-}
+// let addTwoNumbers = (x, y) => {
+//     return(x + y);
+// }
 
 
 //   const arr = ["apple", "banana", "cherry"];
@@ -59,11 +59,104 @@ let addTwoNumbers = (x, y) => {
 
 // }
 // addTwoNumbers(5, 6)
-let resultsArr = [];
-for (let i = 0; i <= 10; i++) {
-    result = addTwoNumbers(i, 2 * i);
-    resultsArr.push(result);
+// let resultsArr = [];
+// for (let i = 0; i <= 10; i++) {
+//     result = addTwoNumbers(i, 2 * i);
+//     resultsArr.push(result);
+// }
+// console.log(resultsArr);
+
+// variable scope in function
+// testAvailability = (x) => {
+//     console.log("availabel here", x);
+
+// }
+// testAvailability("hi");
+// console.log("not avialable hre", x);
+
+// function testAvailability() {
+//     let y = "local variable";
+//     console.log("avialable", y);
+//     return y;
+// }
+// let z = testAvailability();
+// console.log("outside the function", z);
+// console.log("not avialable hre", y);
+// function doingStuff() {
+//     if (true) {
+//         var x = "local";
+
+//     }
+//     console.log(x);
+// }
+// doingStuff()
+
+// function doingStuff() {
+//     if (true) {
+//         const x = "local";
+
+//     }
+//     console.log(x);
+// }
+// doingStuff()
+
+// let globalScope = "Accessible everywhere";
+// console.log("outsidefunction functioj ", globalScope);
+// function createingScope(x) {
+//     console.log("acess to global var", globalScope);
+
+// }
+// createingScope("gvfbgvfbvjv")
+// console.log("jciudbchjvchdb", x)
+
+
+// let x = "global";
+// function doingStuff() {
+//     let x = "local";
+//     console.log(x);
+// }
+// doingStuff();
+// console.log(x);
+
+// function doingStuff() {
+//     x = "local";
+//     console.log("hdxvhxbjxnlk", x);
+// }
+// doingStuff();
+// console.log("hfuegf", x);
+
+
+// (() => {
+//     console.log("IIFE with arraw function");
+// })();
+
+//RECURSIVE FUNCTION
+// function factorial(n) {
+//     if (n === 0) return 1; // Base case
+//     return n * factorial(n - 1); // Recursive call
+// }
+// console.log(factorial(15));
+
+// function getRecursive(n) {
+//     console.log(n)
+//     if (n == 0) return 1;
+//     getRecursive(--n); // Recursive call
+// }
+// getRecursive(3);
+
+function logRecursive(n) {
+    console.log("started function", n);
+    if (n > 0) {
+        logRecursive(n - 1);
+    }
+    else {
+        console.log("done with recursive");
+    }
+    console.log("ended function", n);
 }
-console.log(resultsArr);
+logRecursive(3);
+
+
+
 
 
