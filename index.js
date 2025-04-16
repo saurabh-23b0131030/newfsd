@@ -144,17 +144,71 @@
 // }
 // getRecursive(3);
 
-function logRecursive(n) {
-    console.log("started function", n);
-    if (n > 0) {
-        logRecursive(n - 1);
-    }
-    else {
-        console.log("done with recursive");
-    }
-    console.log("ended function", n);
-}
-logRecursive(3);
+// function logRecursive(n) {
+//     console.log("started function", n);
+//     if (n > 0) {
+//         logRecursive(n - 1);
+//     }
+//     else {
+//         console.log("done with recursive");
+//     }
+//     console.log("ended function", n);
+// }
+// logRecursive(3);
+
+// function getrecursive(nr){
+//     console.log(nr);
+//     if(nr>0){
+//         getrecursive(--nr);
+//     }
+// }
+// getrecursive(3);
+
+// performance of recursion is slower than the iteration 
+
+// // Nested function
+
+// function doouterfunctionstuff(nr) {
+//     console.log("outer function");
+//     doinnerfunctionStuff(nr);
+//     function doinnerfunctionStuff(x) {
+//         console.log(x + 7);
+//         console.log("I can acess outer variable", nr);
+//     }
+
+// }
+// doouterfunctionstuff(2);
+
+// # anonymous function
+
+// function callbacks
+
+// let functionvariabl = function () {
+//     console.log("not so secret through");
+// }
+
+// function doFlexiblestuff(executeStuff) {
+//     executeStuff();
+//     console.log("inside doflexiblestuff");
+
+// }
+// doFlexiblestuff(functionvariabl);
+
+// let youGotThis = function () {
+//     console.log("you're doing realli well, keep coding");
+
+// }
+// setTimeout(youGotThis, 5000);
+
+// let youGotThis = function () {
+//     console.log("you're doing really well, keep coding");
+
+// }
+// setInterval(youGotThis, 1000);
+
+// let testfunction=function(){
+//     console.log("hello")
+// }()
 
 
 
