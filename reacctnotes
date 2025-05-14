@@ -1,0 +1,18 @@
+react is a liberary created by facebook.
+it is used to create single page application.
+liberary- a collection of code and is used its features after after importing it.
+Jquery is a liberary.
+framework- it is complete package of code with its own liberaries.
+Angular is an example of framework.y
+
+
+react create a virtual DOM.
+DOM is a representation of HTML code in a webpage and document is the webpage iself.
+
+benifites of virtual DOM.
+1- react first create a exact copy of dom .
+2- each time code is change DOm will completely update and rewritten. it is an expensive information .
+ 
+ // jsx- javascript xml.
+  // some important rules
+  1- 
